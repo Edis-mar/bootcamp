@@ -6,26 +6,11 @@
     box-sizing: border-box;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 700;
-      font-family: "Inter", serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#main-title{
-
-}
-
-#main-subtitle{
-    display: flex;
-    align-items:baseline;
+    color:#FFFFFF;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
 }
 
 header{
@@ -38,14 +23,72 @@ header{
 
 #header-text{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
-    font-size: 1.5rem ;
+    gap: 3rem;
 }
+
+.text{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 button{
     background-color: #0C70F2E5;
-    color: #FFFFFF;
     padding: 0.5rem;
     border: none;
+}
+
+bold{
+    background-color: #1F1F1F;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top,#303030 70%, #055dcfe3);
+    width:100%;
+    padding: 10% 10% 50% 10%;
+}
+
+#main-title{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+#main-subtitle{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15%;
+}
+
+.t1{
+    font-size:2rem;
+    padding: 0rem 0.1rem;
+    font-weight: 700;
+}
+
+#dnc{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#checkbox{
+    display: flex;
+    gap:1.5rem;
+}
+.caixa{
+    margin-right:0.4rem;
+}
+
+footer{
+    background-color: #0C70F2;
+    display: flex;
 }

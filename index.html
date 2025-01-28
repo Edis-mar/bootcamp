@@ -7,47 +7,67 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>    
 <body>
     <header>
         <div id="header-text">
-            <p>Home</p>
-            <p>Ultimas Edições</p>
-            <p>Requisitos para Participar</p>
+            <p class="text">Home</p>
+            <p class="text">Ultimas Edições</p>
+            <p class="text">Requisitos para Participar</p>
         </div>    
         <button>Login</button>
     </header>
 
     <main>
         <h1 id="main-title">BOOTCAMP DNC</h1>
-        <h2 id="main-subtitle ">Esse será um evento exclusivo para todos os alunos<br>
-            da DNC, que querem <bold>acelerar a carreira</bold> com uma<br>
+        <h2 id="main-subtitle">Esse será um evento exclusivo para todos os alunos<br>
+            da <b id="dnc">DNC</b>, que querem <bold class="t1">acelerar a carreira</bold> com uma<br>
             semana intensiva de conteúdo de mercado entre<br>
-            <bold>BACK-END, FRONT-END & BANCO DE DADOS.</bold></h2>
-        <label for=></label>
-        <input type="text" placeholder="Insira seu nome aqui">
+            <bold class="t1">BACK-END, FRONT-END & BANCO DE DADOS.</bold>
+        </h2>
 
-        <label for=""></label>
-        <input type="text" placeholder="insira seu sobrenome aqui">
+        <form action="">
+            <p><label for="Nome"></label> Nome:<br>
+                <input type="text" placeholder="Insira seu nome aqui">
+            </p>
+
+            <p><label for="Sobrenome"></label> Sobrenome:<br> 
+                <input type="text" placeholder="insira seu sobrenome aqui">
+            </p>
         
-        <label for=""></label>
-        <ol>
-            <li>Front-End</li>
-            <li>Back-End</li>
-            <li>Banco de Dados</li>
-        </ol>
+            <!--CHECKBOX-->
+            <p>
+                Área de interesse:<br></p>
+            
+            <p id="checkbox">   
+                <label for="">
+                <input class="caixa" type="checkbox"> Front-End
+                </label>  
 
-        <label for=""></label>
-        <input type="text" placeholder="insira seu e-mail aqui">
+                <label for="">
+                <input class="caixa" type="checkbox"> Back-End
+                </label> 
 
-        <label for=""></label>
-        <input type="text" placeholder="(99) 9999-9999">
+                <label for=""> 
+                <input class="caixa" type="checkbox"> Banco de Dados
+                </label>
+            </p>
+            <!--FIM DA CHECKBOX-->
 
-        <label for=""></label>
-        <input type="text" placeholder="qual frase criativa você gostaria de falar?:]">
+            <p><label for=""></label> E-mail:<br>
+                <input type="text" placeholder="insira seu e-mail aqui">
+            </p>
 
-        <button>Login</button>
+            <p><label for=""></label> Telefone:<br>
+                <input type="text" placeholder="(99) 9999-9999">
+            </p>
+
+            <p><label for=""></label> Insira uma frase criativa aqui:<br>
+                <input type="text" placeholder="qual frase criativa você gostaria de falar?:]">
+            </p>     
+            <button>Login</button>
+        </form>    
     </main>
 
     <footer>
